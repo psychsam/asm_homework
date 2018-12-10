@@ -24,7 +24,7 @@ do
   if test $points = 1
   then
     echo "Test $n passed"
-    total=`expr $total + $points`
+     total=$(($total+1))
   fi
 done
 
@@ -38,7 +38,7 @@ diff -w text_enc.want text_enc.out > text_enc.delta || { echo "Encode text file 
 if test $points = 1
 then
   echo "Encode text file passed"
-  total=`expr $total + $points`
+   total=$(($total+1))
 fi
 
 # Test of the encoding of a binary file
@@ -51,7 +51,7 @@ diff -w binary_enc.want binary_enc.out > binary_enc.delta || { echo "Encode bina
 if test $points = 1
 then
   echo "Encode binary file passed"
-  total=`expr $total + $points`
+   total=$(($total+1))
 fi
 
 #Decode-------------------------------------------------------------------------------------------------------
@@ -71,7 +71,7 @@ do
   if test $points = 1
   then
     echo "Test $n passed"
-    total=`expr $total + $points`
+     total=$(($total+1))
   fi
 done
 
@@ -85,7 +85,7 @@ diff -w text_dec.want text_dec.out > text_dec.delta || { echo "Decode text file 
 if test $points = 1
 then
   echo "Decode text file passed"
-  total=`expr $total + $points`
+   total=$(($total+1))
 fi
 
 # Test of the encoding of a binary file
@@ -98,7 +98,7 @@ diff -w binary_dec.want binary_dec.out > binary_dec.delta || { echo "Decode bina
 if test $points = 1
 then
   echo "Decode binary file passed"
-  total=`expr $total + $points`
+  total=$(($total+1))
 fi
 
 
