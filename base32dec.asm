@@ -1,20 +1,20 @@
-;  Executable name : hexdump1
+;  Executable name : base32dec
 ;  Version         : 1.0
-;  Created date    : 4/4/2009
-;  Last update     : 4/4/2009
+;  Created date    : 18/12/2018
+;  Last update     : 18/12/2018
 ;  Author          : Sam Imboden
 ;  Description     : A simple program in assembly for Linux, using NASM 2.05,
-;    demonstrating the conversion of binary values to hexadecimal strings.
-;    It acts as a very simple hex dump utility for files, though without the
-;    ASCII equivalent column.
+; 		     Decoding a base32 file.
 ;
 ;  Run it this way:
-;    hexdump1 < (input file)  
+;    base32dec < (input file)  
 ;
 ;  Build using these commands:
-;    nasm -f elf64 -g -F stabs hexdump1.asm
-;    ld -o hexdump1 hexdump1.o
+;    nasm -f elf64 -g -F dwarf base32dec.asm
+;    ld -o base32dec base32dec.o
 ;
+;
+;For permission to use/copy/sell this software contact Sam Imboden (imboden dot sam at gmail dot com).
 
 SECTION .data			; Section containing initialised data
 	
