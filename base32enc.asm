@@ -6,6 +6,16 @@
 ;  Description     : Base32 encoding
 ;    
 ;   Don't touch my spaghettie code
+;
+;  Run it this way:
+;    base32enc < (input file)  
+;
+;  Build using these commands:
+;    nasm -f elf64 -g -F dwarf base32enc.asm
+;    ld -o base32enc base32enc.o
+;
+;
+;For permission to use/copy/sell this software contact Sam Imboden (imboden dot sam at gmail dot com).
 
 SECTION .data			; Section containing initialised data
 	
