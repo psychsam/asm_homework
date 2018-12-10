@@ -61,8 +61,7 @@ nasm -f elf64 -g -F dwarf base32dec.asm -o b32d.o || { echo "Assembly code base3
 ld -o b32d b32d.o || { echo "Object failed to link"; exit 1; }
 
 # run tests with short strings
-total=0
-for n in IEFA==== IFAQU=== IFBAU=== MJRQU=== IQYTGCQ= MZXXQ6IK NRQWYYLMMFWGC3DBNQ2DENBSBI======
+for n in IE====== IFAQ==== IFBA==== MJRQ==== IQYTG=== MZXXQ6I= NRQWYYLMMFWGC3DBNQ2DENBS NVQWIZLCPFZWC3IK
 do
   points=1
   timeout -s SIGKILL 1s echo -n $n | ./b32d > $n.out || { echo "Your 'b32' command failed to run: $?" ; points=0 ; }
