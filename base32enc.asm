@@ -4,8 +4,6 @@
 ;  Last update     : 11/10/2018
 ;  Author          : Sam Imboden
 ;  Description     : Base32 encoding
-;    
-;   Don't touch my spaghettie code
 ;
 ;  Run it this way:
 ;    base32enc < (input file)  
