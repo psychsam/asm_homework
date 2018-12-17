@@ -275,7 +275,7 @@ Write_toBuffB_ALL:
     and rbx, rcx        ;Apply mask
     shr rbx, 35         ;Shift result back so it's only one byte
     mov byte [BuffB], bl;Add byte to BufferB
-    ;The same again and aigain...
+    ;The same again and again...
     shr rcx, 5
     mov rbx, rax
     and rbx, rcx
